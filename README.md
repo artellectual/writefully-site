@@ -1,7 +1,6 @@
 Writefully
 =========
 
---------------
 > Writefully converts your github repository 
 > into a content-management-system.
 
