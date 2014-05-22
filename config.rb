@@ -3,9 +3,9 @@
 ###
 
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  config.output_style = :compact
+end
 
 ###
 # Page options, layouts, aliases and proxies
@@ -51,20 +51,39 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :directory_indexes
+
+activate :deploy do |deploy|
+  deploy.method   = :ftp
+  deploy.host     = "ftp.zacksiri.com"
+  deploy.path     = "/"
+  deploy.user     = "yoobook@zacksiri.com"
+  deploy.password = "ss21361259"
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
+  # activate :asset_host
+  # set :asset_host, "http://d31ghqx0083k8d.cloudfront.net"
+  
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
+
+
+  activate :minify_html
+
+  # gzip assets
+  activate :gzip
 
   # Use relative URLs
   # activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  # set :http_path, "/Content/images/"
 end
