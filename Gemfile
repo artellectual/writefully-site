@@ -12,7 +12,7 @@ gem 'font-awesome-middleman'
 gem 'middleman-livereload'
 gem 'middleman-minify-html'
 gem 'middleman-blog'
-gem 'middleman-gh-pages'
+gem 'middleman-deploy'
 gem 'middleman-sync'
 
 # For faster file watcher updates on Windows:

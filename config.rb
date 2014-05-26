@@ -53,6 +53,15 @@ set :images_dir, 'images'
 
 activate :directory_indexes
 
+
+activate :deploy do |deploy|
+  deploy.method   = :ftp
+  deploy.host     = "ftp.zacksiri.com"
+  deploy.path     = "/"
+  deploy.user     = "yoobook@zacksiri.com"
+  deploy.password = "ss21361259"
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
