@@ -53,13 +53,8 @@ set :images_dir, 'images'
 
 activate :directory_indexes
 
-activate :deploy do |deploy|
-  deploy.method   = :ftp
-  deploy.host     = "ftp.zacksiri.com"
-  deploy.path     = "/"
-  deploy.user     = "writefully@zacksiri.com"
-  deploy.password = "ch3qin2136"
-end
+activate :relative_assets
+set :relative_links, true
 
 # Build-specific configuration
 configure :build do
