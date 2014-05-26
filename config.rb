@@ -57,8 +57,8 @@ activate :deploy do |deploy|
   deploy.method   = :ftp
   deploy.host     = "ftp.zacksiri.com"
   deploy.path     = "/"
-  deploy.user     = "yoobook@zacksiri.com"
-  deploy.password = "ss21361259"
+  deploy.user     = "writefully@zacksiri.com"
+  deploy.password = "ch3qin2136"
 end
 
 # Build-specific configuration
