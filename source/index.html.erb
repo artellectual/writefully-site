@@ -1,5 +1,5 @@
 ---
-title: Writefully
+title: Turn a Github Repo into a CMS - Writefully
 ---
 
 
@@ -15,7 +15,10 @@ title: Writefully
 </section>
 
 
+
 <div id="parallax-bg"></div>
+
+
 
 <div class="video-container">
 	<iframe width="960" height="540" src="//www.youtube.com/embed/bH1qFVf0w9E" frameborder="0" allowfullscreen>
@@ -23,9 +26,18 @@ title: Writefully
 	</iframe>
 </div>
 
+
+
 <nav>
+	<div class='container share'>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-size='large' data-via="codemy" data-hashtags="writefully">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+		<iframe src="http://ghbtns.com/github-btn.html?user=codemy&repo=writefully&type=watch&size=large&count=true"
+  	allowtransparency="true" frameborder="0" scrolling="0" width="124" height="30"></iframe>
+	</div>
 	<div class="container">
-		<a href="https://github.com/codemy/writefully">
+		<a href="https://github.com/codemy/writefully#getting-started">
 			<%= image_tag "nav-icon.png" %>
 			Get Started
 		</a><a href="https://github.com/codemy/writefully/wiki">
@@ -44,13 +56,13 @@ title: Writefully
 <div class="row grey-bg">
 	<div class="container">
 		<div class="col-md-6"><%= image_tag "ruby.png", class: "para-icon" %><h4>Extendable</h4><p>Writefully is built as a rails engine. Which means you can use it in any rails application you want. It also comes with utilities that will allow you to extend the capabilites of writefully into your own custom classes.</p></div>
-		<div class="col-md-6"><%= image_tag "bolt.png", class: "para-icon" %><h4>Fault tolerant by design</h4><p>Built using Celluloid currency framework. Writefully is equipped to handle failure. It will report any errors it encounters and recover so it continues functioning as expected.</p></div>
+		<div class="col-md-6"><%= image_tag "bolt.png", class: "para-icon" %><h4>Fault tolerant by design</h4><p>Built using Celluloid concurrency framework. Writefully is equipped to handle failure. It will report any errors it encounters and recover so it continues functioning as expected.</p></div>
 	</div>
 </div>
 <div class="row">
 	<div class="container">
 		<div class="col-md-6"><%= image_tag "repo.png", class: "para-icon" %><h4>Multi-site support</h4><p>Writefully is designed to allow you to host multiple sites / blogs through a single installation. Currenty this is now possible on some levels however we are still working on some of the features that will make this complete.</p></div>
-		<div class="col-md-6"><%= image_tag "globe.png", class: "para-icon" %><h4>Internationalization</h4><p>If you have content that requires translation. Writefully will support it out of the box. Check out the documentation on how to connect translated content to the main content.</p></div>
+		<div class="col-md-6"><%= image_tag "globe.png", class: "para-icon" %><h4>Internationalization</h4><p>If you have content that requires translation. Writefully will support it out of the box. Check out the documentation on how to connect translated content to the main content. <strong>This feature is still under development</strong></p></div>
 	</div>
 </div>
 
@@ -66,7 +78,7 @@ title: Writefully
 </section>
 <footer>
 	<div class="container">
-		© Copyright Codemy 2013. Codemy is a subsidiary of Artellectual Co., Ltd.
+		Writefully is released under <a href='http://www.opensource.org/licenses/mit-license.php'>MIT License</a>. Codemy is a subsidiary of Artellectual Co., Ltd.
 	</div>
 		<br>
 		<a href="https://github.com/codemy/writefully">
